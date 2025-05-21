@@ -27,18 +27,20 @@ lista = [
 ]
 
 
-""" for item in lista:
-  #print(item)
-  qqnome = item['nome']
+""" for item in lista: # percorre a lista de dicionários 
+  #print(item) # imprime o dicionário
+  qqnome = item['nome'] # acessa o valor da chave 'nome' do dicionário 
   print(qqnome) """
 
-categorias = {}  
-for item in lista:
-  qqnome = item['categoria']
-  if qqnome in categorias:
-    categorias[qqnome].append(item)
+categorias = {}   # dicionário vazio 
+for item in lista:  # percorre a lista de dicionários, item é o nome da variável que vai receber cada dicionário
+  # print(item) # imprime o dicionário
+  qqnome = item['categoria'] # acessa o valor da chave 'categoria' do dicionário 
+  if qqnome in categorias:  # verifica se a categoria já está no dicionário, qqnome é a chave
+    # print(qqnome) # imprime o valor da chave 'categoria'
+    categorias[qqnome].append(item)  # se já estiver, adiciona o item à lista da categoria 
   else:
-    categorias[qqnome] = [item]
+    categorias[qqnome] = [item]  # se não estiver, cria uma nova lista com o item 
     
 # saida
-print(categorias)
+print(categorias) 
