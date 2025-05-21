@@ -21,17 +21,18 @@ print(maria(texto))
 
 texto = "O rato roeu a roupa do rei de Roma. O rato é esperto."
 
-texto2 = texto.lower()
-palavras = texto2.split()
-#print(type(palavras))
+texto2 = texto.lower()  # transforma tudo em minusculo 
+palavras = texto2.split() # separa as palavras em uma lista
+#print(type(palavras))  # verifica o tipo 
 #print(palavras)
-#print(len(palavras))
-contagem = {}
-for maria in palavras:
+#print(len(palavras)) # verifica o tamanho da lista 
+contagem = {}   # dicionario vazio 
+for maria in palavras:  # percorre a lista de palavras, maria é o nome da variável que vai receber cada palavra 
   # print(maria)
-  if maria in contagem:
-    contagem[maria] += 1
+  if maria in contagem: # verifica se a palavra já está no dicionário, maria é a chave 
+    contagem[maria] += 1 # se já estiver, soma 1 
   else:
-    contagem[maria] = 1
+    contagem[maria] = 1 # se não estiver, adiciona a palavra com valor 1 
     
-print(contagem)
+print(contagem) # imprime o dicionário
+# Saída esperada: {'o': 2, 'rato': 2, 'roeu': 1, ...}
