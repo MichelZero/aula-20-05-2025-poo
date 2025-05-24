@@ -18,6 +18,10 @@ def maria(joao):
 texto = "O rato roeu a roupa do rei de Roma. O rato é esperto."
 print(maria(texto))
 '''
+""" num = input("Digite um número: ")
+print(type(num))
+print(type(int(num))) """
+
 
 texto = "O rato roeu a roupa do rei de Roma. O rato é esperto."
 

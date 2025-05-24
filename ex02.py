@@ -13,11 +13,10 @@
 
 
 # Saída esperada: {
-  #        'Fruta': [{'nome': 'Maçã'},
-  #                  {'nome': 'Banana'}],
-  #      'Vegetal': [{'nome': 'Cenoura'},
-  #                  {'nome': 'Alface'}]
-  #               }
+  #   'Fruta': [{'nome': 'Maçã', 'categoria': 'Fruta'},
+  #             {'nome': 'Banana', 'categoria': 'Fruta'}],
+  # 'Vegetal': [{'nome': 'Cenoura', 'categoria': 'Vegetal'},
+  #             {'nome': 'Alface', 'categoria': 'Vegetal'}]}
 
 lista = [
     {"nome": "Maçã", "categoria": "Fruta"}, # Item 1, tipo DIC
